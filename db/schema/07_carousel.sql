@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS carousel CASCADE;
+
+CREATE TABLE carousel (
+
+  id SERIAL PRIMARY KEY NOT NULL,
+  image1 VARCHAR(512),
+  image2 VARCHAR(512),
+  image3 VARCHAR(512),
+  image4 VARCHAR(512),
+  image5 VARCHAR(512),
+  image6 VARCHAR(512)
+
+)
