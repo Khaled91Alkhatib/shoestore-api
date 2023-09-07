@@ -18,9 +18,11 @@ app.use(cors());
 
 const productRoutes = require("./routes/products")
 const carouselRoutes = require("./routes/carousel")
+const specificationRoutes = require("./routes/specifications")
 
 app.use("/api/products", productRoutes(db))
 app.use("/api/carousel", carouselRoutes(db))
+app.use("/api/specifications", specificationRoutes(db))
 
 app.listen(PORT, () => {
   console.log(`Server started at ${PORT}`);
